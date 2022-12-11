@@ -101,8 +101,7 @@ int main(int argc, char **argv, char **env)
             }
             argv[i + EndofCommand(&argv[i]) + 1] = NULL;
             if (execve(argv[i], &argv[i], env))
-                ErrorStream("error: cannot execute ", argv[i], 0);
-            exit(1);
+                ErrorStream("error: cannot execute ", argv[i], 1);
         }
         if (EndsWithPipe(&argv[i]))
         {

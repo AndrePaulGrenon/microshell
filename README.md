@@ -18,10 +18,15 @@ This code only uses 1 while loop statement in the main and 1 pipe at a time whic
 5. If command had a pipe, Dup2 the pipe in stdin to be used by next command.
 
 Extra functions:
+
 ft_strlen : Do I need to comment ?
+
 EndsWithPipe: Returns true if command finishes with a pipe.
+
 EndofCommand: Returns index of last argument relative to current command. Used by EndswithPipe to check next argument after last argument. Looks for ";" and  "|".
+
 ErrorStream: Provides a single interface for all error messages needed for this exercice. Used for all system call errors.
+
 ExecCD: Deals with "cd" command by managing errors. 
 
 This code will only open 1 pipe at a time. Don't forget to close both file descriptors in parent and child processes. Makes it easy to avoid file desriptor leaks. 

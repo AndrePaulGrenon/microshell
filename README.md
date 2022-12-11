@@ -10,7 +10,7 @@ By using char **argv directly into the Execve System call there is no need to co
 
 This simple logic enables to focus mainly on the pipe aspect of the exam, error managing and the cd builtin. 
 
-This code only uses one while loop statement in the main which makes it easy to follow:
+This code only uses 1 while loop statement in the main and 1 pipe at a time which makes it easy to follow:
 1. Jumps to next arguments if command is ";" or "|" using continue;
 2. Checks if builtin "cd" then continue;
 3. Checks if the commands finishes with a pipe and opens it if true.

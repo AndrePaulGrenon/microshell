@@ -4,7 +4,7 @@
 
 SUPER EASY and SIMPLE MICROSHELL
 
-This microshell is barely 121 lignes and could be optimize to be even lesser.
+This microshell is only 120 lines but could be optimize to be even lesser.
 
 By using char **argv directly into the Execve System call there is no need to construct an array of arguments or malloc anything. No leaks possible.
 
